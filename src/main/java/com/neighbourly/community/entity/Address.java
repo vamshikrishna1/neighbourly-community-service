@@ -1,16 +1,11 @@
 package com.neighbourly.community.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.Embeddable;
 import lombok.Data;
 
 @Data
-@Entity
+@Embeddable
 public class Address {
-    @Id
-    @GeneratedValue
-    private Long addressId;
     private String houseNumber;
     private String flatNumber;
     private String floorNumber;

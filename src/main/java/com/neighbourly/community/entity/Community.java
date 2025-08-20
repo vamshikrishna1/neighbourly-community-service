@@ -11,8 +11,7 @@ public class Community {
     private Long communityId;
     private String name;
     private String description;
-    @OneToOne
-    @JoinColumn(name = "address_id", referencedColumnName = "addressId")
+    @Embedded
     private Address address;
     private String builder;
     private String createdBy;
