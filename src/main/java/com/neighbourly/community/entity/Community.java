@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Community {
+public class Community extends  Auditable{
     @Id
     @GeneratedValue
     private Long communityId;
@@ -14,5 +14,5 @@ public class Community {
     @Embedded
     private Address address;
     private String builder;
-    private String createdBy;
+
 }
